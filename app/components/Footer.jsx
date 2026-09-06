@@ -44,7 +44,7 @@ export default function Footer() {
             <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
               <li>
                 <a
-                  href="https://sku-bulk-generator.onrender.com"
+                  href="https://apps.shopify.com/sku-bulk-generator"
                   target="_blank"
                   rel="noreferrer"
                   style={{ color: '#475569', textDecoration: 'none', fontSize: '0.875rem', display: 'inline-flex', alignItems: 'center', gap: '0.3rem', transition: 'color 0.2s', fontWeight: '500' }}

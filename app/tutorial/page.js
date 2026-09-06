@@ -141,7 +141,7 @@ export default function TutorialPage() {
           <p style={{ color: '#475569', fontSize: '1rem', maxWidth: '500px', margin: '0 auto 1.5rem auto' }}>
             Install SKU Bulk Generator today and save hours of manual data entry on Shopify.
           </p>
-          <a href="https://sku-bulk-generator.onrender.com" target="_blank" rel="noreferrer" className="btn-primary">
+          <a href="https://apps.shopify.com/sku-bulk-generator" target="_blank" rel="noreferrer" className="btn-primary">
             <span>Get Started Free</span>
             <ArrowRight size={18} />
           </a>

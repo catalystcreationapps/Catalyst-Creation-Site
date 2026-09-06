@@ -57,7 +57,7 @@ export default function Header() {
         {/* Action Button & Mobile Toggle */}
         <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
           <a
-            href="https://sku-bulk-generator.onrender.com"
+            href="https://apps.shopify.com/sku-bulk-generator"
             target="_blank"
             rel="noreferrer"
             className="btn-primary"

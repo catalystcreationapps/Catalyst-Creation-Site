@@ -286,7 +286,7 @@ export default function Home() {
                 </div>
 
                 <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
-                  <a href="https://sku-bulk-generator.onrender.com" target="_blank" rel="noreferrer" className="btn-primary">
+                  <a href="https://apps.shopify.com/sku-bulk-generator" target="_blank" rel="noreferrer" className="btn-primary">
                     <span>Install SKU Bulk Generator</span>
                     <ExternalLink size={18} />
                   </a>
