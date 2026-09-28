@@ -1,19 +1,27 @@
 import Link from 'next/link';
-import { FileText, ArrowLeft, Terminal, Cpu, Database, CheckCircle2, ShieldCheck, Zap, Layers, RefreshCw } from 'lucide-react';
+import { FileText, Terminal, Cpu, Database, CheckCircle2, ShieldCheck, Zap, Layers, RefreshCw } from 'lucide-react';
+import Breadcrumbs from '../components/Breadcrumbs';
 
 export const metadata = {
-  title: 'SKU Bulk Generator Technical Documentation | Catalyst Creations Apps',
+  title: 'SKU Bulk Generator Technical Documentation | Catalyst Creation',
   description: 'Complete technical reference, token syntax, API webhooks, and rules specification for SKU Bulk Generator Shopify App.',
+  alternates: {
+    canonical: 'https://catalyst-creation-site.vercel.app/sku-app-doc',
+  },
+  openGraph: {
+    title: 'SKU Bulk Generator Technical Documentation | Catalyst Creation',
+    description: 'Complete technical reference, token syntax, API webhooks, and rules specification for SKU Bulk Generator Shopify App.',
+    url: 'https://catalyst-creation-site.vercel.app/sku-app-doc',
+    type: 'website',
+  },
 };
 
 export default function SkuAppDocPage() {
   return (
-    <div style={{ padding: '4rem 0 6rem 0' }}>
+    <div style={{ padding: '3.5rem 0 6rem 0' }}>
       <div className="container-custom" style={{ maxWidth: '980px' }}>
-        {/* Navigation back */}
-        <Link href="/" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', color: '#3A925F', textDecoration: 'none', fontSize: '0.9rem', fontWeight: '600', marginBottom: '2rem' }}>
-          <ArrowLeft size={16} /> Back to Home
-        </Link>
+        <Breadcrumbs items={[{ label: 'Documentation', href: '/sku-app-doc' }]} />
+
 
         {/* Header */}
         <div style={{ marginBottom: '3.5rem' }}>

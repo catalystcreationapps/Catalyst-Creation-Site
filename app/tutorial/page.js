@@ -1,19 +1,27 @@
 import Link from 'next/link';
-import { BookOpen, ArrowLeft, PlayCircle, CheckCircle2, Sliders, Zap, RefreshCw, ShieldAlert, ArrowRight } from 'lucide-react';
+import { BookOpen, PlayCircle, CheckCircle2, Sliders, Zap, RefreshCw, ShieldAlert, ArrowRight } from 'lucide-react';
+import Breadcrumbs from '../components/Breadcrumbs';
 
 export const metadata = {
   title: 'Step-by-Step Tutorials & Setup Guides | SKU Bulk Generator',
   description: 'Learn how to set up SKU Bulk Generator, configure automated SKU rule templates, bulk update Shopify product variants, and avoid duplicate SKUs.',
+  alternates: {
+    canonical: 'https://catalyst-creation-site.vercel.app/tutorial',
+  },
+  openGraph: {
+    title: 'Step-by-Step Tutorials & Setup Guides | SKU Bulk Generator',
+    description: 'Learn how to set up SKU Bulk Generator, configure automated SKU rule templates, bulk update Shopify product variants, and avoid duplicate SKUs.',
+    url: 'https://catalyst-creation-site.vercel.app/tutorial',
+    type: 'website',
+  },
 };
 
 export default function TutorialPage() {
   return (
-    <div style={{ padding: '4rem 0 6rem 0' }}>
+    <div style={{ padding: '3.5rem 0 6rem 0' }}>
       <div className="container-custom" style={{ maxWidth: '960px' }}>
-        {/* Navigation back */}
-        <Link href="/" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', color: '#3A925F', textDecoration: 'none', fontSize: '0.9rem', fontWeight: '600', marginBottom: '2rem' }}>
-          <ArrowLeft size={16} /> Back to Home
-        </Link>
+        <Breadcrumbs items={[{ label: 'Tutorials', href: '/tutorial' }]} />
+
 
         {/* Header */}
         <div style={{ marginBottom: '3.5rem' }}>

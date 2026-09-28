@@ -1,9 +1,19 @@
 import Link from 'next/link';
-import { History, ArrowLeft, Tag, Sparkles, CheckCircle2, Zap, ShieldCheck } from 'lucide-react';
+import { History, Tag, Sparkles, CheckCircle2, Zap, ShieldCheck } from 'lucide-react';
+import Breadcrumbs from '../components/Breadcrumbs';
 
 export const metadata = {
-  title: 'Changelog & Product Updates | Catalyst Creations Apps',
-  description: 'Track the latest features, releases, and Shopify integration updates for SKU Bulk Generator and Catalyst Creations Apps.',
+  title: 'Changelog & Product Updates | Catalyst Creation',
+  description: 'Track the latest features, releases, and Shopify integration updates for SKU Bulk Generator and Catalyst Creation apps.',
+  alternates: {
+    canonical: 'https://catalyst-creation-site.vercel.app/changelog',
+  },
+  openGraph: {
+    title: 'Changelog & Product Updates | Catalyst Creation',
+    description: 'Track the latest features, releases, and Shopify integration updates for SKU Bulk Generator and Catalyst Creation apps.',
+    url: 'https://catalyst-creation-site.vercel.app/changelog',
+    type: 'website',
+  },
 };
 
 const RELEASES = [
@@ -57,12 +67,10 @@ const RELEASES = [
 
 export default function ChangelogPage() {
   return (
-    <div style={{ padding: '4rem 0 6rem 0' }}>
+    <div style={{ padding: '3.5rem 0 6rem 0' }}>
       <div className="container-custom" style={{ maxWidth: '900px' }}>
-        {/* Navigation back */}
-        <Link href="/" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', color: '#3A925F', textDecoration: 'none', fontSize: '0.9rem', fontWeight: '600', marginBottom: '2rem' }}>
-          <ArrowLeft size={16} /> Back to Home
-        </Link>
+        <Breadcrumbs items={[{ label: 'Changelog', href: '/changelog' }]} />
+
 
         {/* Header */}
         <div style={{ marginBottom: '3.5rem' }}>

@@ -1,19 +1,27 @@
 import Link from 'next/link';
-import { Shield, ArrowLeft, Lock, Database, Eye, FileText } from 'lucide-react';
+import { Shield, Lock, Database, Eye, FileText } from 'lucide-react';
+import Breadcrumbs from '../components/Breadcrumbs';
 
 export const metadata = {
-  title: 'Privacy Policy | Catalyst Creations Apps',
-  description: 'Privacy Policy for Catalyst Creations Apps and SKU Bulk Generator. Learn how we handle and protect merchant and Shopify store data.',
+  title: 'Privacy Policy | Catalyst Creation',
+  description: 'Privacy Policy for Catalyst Creation and SKU Bulk Generator. Learn how we handle and protect merchant and Shopify store data.',
+  alternates: {
+    canonical: 'https://catalyst-creation-site.vercel.app/privacy-policy',
+  },
+  openGraph: {
+    title: 'Privacy Policy | Catalyst Creation',
+    description: 'Privacy Policy for Catalyst Creation and SKU Bulk Generator. Learn how we handle and protect merchant and Shopify store data.',
+    url: 'https://catalyst-creation-site.vercel.app/privacy-policy',
+    type: 'website',
+  },
 };
 
 export default function PrivacyPolicyPage() {
   return (
-    <div style={{ padding: '4rem 0 6rem 0' }}>
+    <div style={{ padding: '3.5rem 0 6rem 0' }}>
       <div className="container-custom" style={{ maxWidth: '900px' }}>
-        {/* Navigation back */}
-        <Link href="/" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', color: '#3A925F', textDecoration: 'none', fontSize: '0.9rem', fontWeight: '600', marginBottom: '2rem' }}>
-          <ArrowLeft size={16} /> Back to Home
-        </Link>
+        <Breadcrumbs items={[{ label: 'Privacy Policy', href: '/privacy-policy' }]} />
+
 
         {/* Header Banner */}
         <div style={{ marginBottom: '3rem' }}>
